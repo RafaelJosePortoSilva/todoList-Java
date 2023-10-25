@@ -17,8 +17,8 @@ public class TodoService {
     }
 
 
-    public List<Todo> create(){
-        todoRepository.save(Todo);
+    public List<Todo> create(Todo todo){
+        todoRepository.save(todo);
         return list();
     }
 
